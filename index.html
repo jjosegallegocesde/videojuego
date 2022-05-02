@@ -102,20 +102,22 @@
         <div class="row justify-content-center">
           <div class="col-12 col-md-6 text-center">
             <h2>REGISTRATE</h2>
-            
-            <form>
+            <div class="alert alert-primary invisible" role="alert" id="alerta">
+              A simple primary alert—check it out!
+            </div>
+            <form id="formularioregistro">
 
-              <div class="input-group mb-3">
+              <div class="input-group mb-4">
                 <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope"></i></span>
-                <input type="text" class="form-control" placeholder="Email" id="email">
+                <input type="email" class="form-control" placeholder="Email" id="email">
               </div>
 
-              <div class="input-group mb-3">
+              <div class="input-group mb-4">
                 <span class="input-group-text" id="basic-addon1"><i class="bi bi-key"></i></span>
-                <input type="text" class="form-control" placeholder="Contraseña" id="password">
+                <input type="password" class="form-control" placeholder="Contraseña" id="password">
               </div>
 
-              <button type="submit" class="btn btn-primary w-100">Submit</button>
+              <button type="submit" class="btn btn-primary w-100" id="botonregistro">Submit</button>
 
             </form>
 
@@ -127,7 +129,8 @@
    
 
     
-
+    <script src="js/firebase.js" type="module"></script>
+    <script src="js/registro.js" type="module"></script>
     <script src="js/cambiomenu.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
